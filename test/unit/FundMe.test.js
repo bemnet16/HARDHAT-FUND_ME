@@ -96,7 +96,7 @@ const { expect, assert } = require("chai")
               it("is allows us to withdraw with multiple funders", async () => {
                   // Arrange
                   const accounts = await ethers.getSigners()
-                  for (i = 1; i < 6; i++) {
+                  for (let i = 1; i < 6; i++) {
                       const fundMeConnectedContract = await fundMe.connect(
                           accounts[i]
                       )
